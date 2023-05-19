@@ -1,0 +1,62 @@
+@charset "utf-8";
+* /* Selecteaza toate elementele*/
+{
+	/* Vom seta margin si padding cu 0, la toate elementele*/
+	margin:0;/*control the spacing width between the edges of your web page and the element itself*/
+	padding:0;/*An element's padding area is the space between its content and its border*/
+}
+
+th
+{
+	background-color:#3394D5;
+	color:aliceblue;
+}
+
+tr:nth-child(even):hover /* when you mouse over it */
+{
+	background-color:orange;
+	color:purple;
+}
+
+tr:nth-child(odd):hover /* when you mouse over it */
+{
+	background-color:yellow;
+	color:hotpink;
+}
+
+thead
+{
+	align:right;
+	
+}
+
+td,th
+{
+	padding:15px;
+}
+
+h1
+{
+	font-family:sans-sherif;
+	font-size:150px;
+	font-weight:800;
+	color:transparent;
+	background:url(https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif);
+	background-position:center;
+	-webkit-background-clip:text;
+	/*Proprietatea CSS background-clip stabilește dacă fundalul unui element se extinde sub caseta de chenar, caseta de umplutură sau caseta de conținut.*/
+}
+
+header
+{
+	/* rgba(red,green,blue,alpha), where alpha shows transperency of the color */
+	/* linear gradient creează o imagine constând dintr-o tranziție progresivă între două sau mai multe culori de-a lungul unei linii drepte */
+	background:white;
+	height:151vh;/*viewport-percentage length unit based on the browser default viewport size*/
+	/* 100vh= va acoperi 100% din suprafata site-ului*/
+	background-size:cover;
+	 /*imaginea este redată la cea mai mare dimensiune conținută în, sau care acoperă, zona de poziționare a fundalului*/
+	background-position: center center;
+	
+   position: relative;	/* fata de dimensiunea site-ului */
+}
