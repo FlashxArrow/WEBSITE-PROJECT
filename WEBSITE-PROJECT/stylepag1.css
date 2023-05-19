@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+* /* Selecteaza toate elementele*/
+{
+	/* Vom seta margin si padding cu 0, la toate elementele*/
+	margin:0;/*control the spacing width between the edges of your web page and the element itself*/
+	padding:0;/*An element's padding area is the space between its content and its border*/
+}
+
+.wrapper
+{
+	width: 1170px;
+	margin:auto; /* the browser calculates the margin */
+	
+}
+
+header
+{
+	/* rgba(red,green,blue,alpha), where alpha shows transperency of the color */
+	/* linear gradient creează o imagine constând dintr-o tranziție progresivă între două sau mai multe culori de-a lungul unei linii drepte */
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("bg.jpg");
+	height:100vh;/*viewport-percentage length unit based on the browser default viewport size*/
+	/* 100vh= va acoperi 100% din suprafata site-ului*/
+	background-size:cover;
+	 /*imaginea este redată la cea mai mare dimensiune conținută în, sau care acoperă, zona de poziționare a fundalului*/
+	background-position: center center;
+	
+   position: relative;	/* fata de dimensiunea site-ului */
+}
+
+.nav-area
+{
+	float:right; /* pozitionam la dreapta elemntele*/
+	list-style:none;
+	margin-top:2px;
+}
+
+.nav-area li
+{
+	background-color:rgba(aqua,0.4);
+	margin: 10px;
+	list-style-type: none;
+	display:inline-block;/*to display list items horizontally */
+}
+
+.nav-area li a /* style from the links in listed items*/
+{
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:1.5em;
+	line-height:70px;
+}
+.wrapper a
+{
+	text-decoration: none;
+}
+.nav-area li a:hover
+{
+	background:aqua; 
+	color:#333;
+}
+
+.logo img
+{
+    position:absolute;
+	left:0px;
+	float:left;
+	width:100px;
+	height:77px;
+	border-radius: 50%;
+}
+
+#welcome-text
+{
+	position:absolute;
+	width:100px;
+	height:300px;
+	margin: 5% 10%;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+
+.dreptunghi
+{
+	postion:absolute;
+	left:0px;
+	height:78px;
+	width:auto;
+	border:4;
+	background:rgba(137,204,240,0.25);
+	z-index:-1; /*Proprietatea z-index specifică ordinea stivei unui element*/
+}  
+
+
+button
+{
+	background:#efefef;
+	height:30px;
+	width:60px;
+	border-radius:20px; /*Proprietatea border-radius definește raza colțurilor elementului */
+	border:0;
+	outline:0;
+	cursor:pointer; /*The cursor is a pointer that indicates a link. Typically an image of a pointing hand*/
+	transition: background 0.5s; /*CSS transitions allows you to change property values smoothly, over a given duration*/
+}
+
+button span
+{
+	display:block;
+	background:#999;
+	height:26px;
+	width:26px;
+	border-radius:50%;
+	margin-left:2px;
+	transition: background 0.5s,margin-left 0.5s;
+}
+
+.lamp-container
+{
+	position:absolute;
+	right:22%;
+	width:200px;
+}
+
+.lamp
+{
+  width:100%;	
+}
+
+
+
+.light
+{
+	position:absolute;
+	top:97%;
+	right:50%;
+	transform:translateX(50%); /* translatam lumina*/
+	width:700px;
+	margin-right:10px;
+	opacity:0;
+	transition: opacity 0.5s;
+}
+
+.rick
+{
+	position:absolute;
+	top:130%;
+	right:50%;
+	transform:translateX(50%);
+	width:200px;
+	height:200px;
+	margin-right:-4px;
+	opacity:0;
+	transition: opacity 0.5s;
+}
+
+.active
+{
+	background:aqua;
+}
+
+.active span
+{
+	background:#fff;
+	margin-left:31px;
+}
+
+
+.on
+{
+	opacity:1;
+}
+
