@@ -2,7 +2,7 @@
 
 Obiectivul acestui proiect a fost să învățăm și să aplicăm conceptele cheie ale dezvoltării web, utilizând HTML, CSS și JavaScript.
 
-Am utilizat tag-urile HTML pentru a structura și organiza conținutul paginilor web, învățând să folosim elemente precum <header>, <nav>, <section>, <article>, și <footer>.
+Am utilizat tag-urile HTML pentru a structura și organiza conținutul paginilor web.
 
 Pentru stilizare, am explorat CSS-ul și am definit aspectul și designul paginilor noastre. Am aplicat stiluri utilizând selecționatori de clasă, identificatori și selectori de elemente, și am experimentat cu proprietăți cum ar fi culori, fonturi, margini și fundaluri.
 
