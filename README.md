@@ -19,6 +19,11 @@ Prin acest proiect, ne-am propus să acumulăm cunoștințe și experiență pra
   JavaScript: script.js.
   
   Video Presentation:
+  
+  
+  
+  
+  
   https://github.com/FlashxArrow/WEBSITE-PROJECT/assets/128243482/fe219709-abc8-48c7-be49-f95b54e6911a
   
   
