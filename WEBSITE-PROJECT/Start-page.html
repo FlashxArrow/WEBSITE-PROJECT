@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"> <!-- specifica limba care se regaseste in pagina( in cazul nostru limba engleza) -->
+	
+<head>
+<meta charset="utf-8"> <!--  charset stabilește tipul de caractere( UTF-8 permite folosirea diacriticelor) -->
+	
+<title>Pag1</title> <!-- titlu la pagina -->
+	
+<!--inserare a unui fișier extern .css în pagina curenta de HTML -->
+<link href="stylepag1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="wrapper"> <!-- Folosim clasa wrapper(învelitoare) -->
+			
+			<div class="logo"> <!-- La care vom adauga si clasa logo -->
+			 <img src="logo.png" alt="logo image"> <!-- inseram imaginea cu logul -->
+			</div> 
+			<ul class="nav-area"> <!--folosim tag-ul ul poate a crea o lista neordonata -->
+				<li><a href="game.html"><b>Games</b></a></li>  
+				<!-- folosim li pentru a adauga un listed item(articol listat) -->
+				<li><a href="locations.html"><i>Locations</i></a>  </li>  
+				<!-- Fiecare articol listat va contine un link catre o noua pagina -->
+				<li><a href="characthers.html"><u>Characthers</u></a>  </li> 
+				<li><a href="Companies.html"><strong>Companies</strong></a>  </li>
+				<li><a href="contact.html"><em>Contact Us</em></a>  </li>
+				<li><a href="mailto:darian.maria@ulbsibiu.ro"><u> Send E-mail</u></a>  </li>
+				<li><a href="istockphoto-1351319643-612x612.jpg">SUPPORT</a></li>
+				<button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+				<!--Call a function when a button is clicked -->
+			</ul>
+			
+		</div>
+			<div class="dreptunghi">
+			</div>
+		
+    <div id="welcome-text">	
+	</div>
+		
+    <script src="script.js" type="text/javascript">
+		  </script>
+		
+	 	<div class="lamp-container">
+	<img src="lamp.png" alt="lamp" height="300" class="lamp">
+	<img src="light.png" alt="light" class="light" id="light">
+	<img src="rick-roll-rick-rolled.gif" alt="rick" class="rick" id="rick">
+		</div>
+		
+	</header>
+	
+	<script>
+	var btn=document.getElementById("btn");
+	var light=document.getElementById("light");
+	var rick=document.getElementById("rick");
+	const audio=new Audio();
+	audio.src="rolled.mp3";
+	var ok=0;
+			function toggleBtn()
+	{
+	btn.classList.toggle("active");
+	light.classList.toggle("on");
+	rick.style.opacity=1-rick.style.opacity;
+	if(ok==0)
+		{
+				audio.play();
+			    ok=1;
+		}
+	else
+		{
+			
+				audio.pause();
+				ok=0;
+	    }
+	}
+	</script>
+	
+</body>
+</html>
+<!-- -->
